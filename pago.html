@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pago</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+  <main>
+    <h2>Simulación de Pago</h2>
+    <form id="pagoForm">
+      <label for="nombre">Nombre en tarjeta:</label>
+      <input type="text" id="nombre" required />
+
+      <label for="tarjeta">Número de tarjeta:</label>
+      <input type="text" id="tarjeta" maxlength="16" required />
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" maxlength="3" required />
+
+      <label for="monto">Monto a pagar:</label>
+      <input type="text" id="monto" readonly />
+      
+      <button type="submit">Pagar</button>  
+    </form>
+  </main>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/pago.js"></script>
+</body>
+</html>

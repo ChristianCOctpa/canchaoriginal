@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reservar Cancha</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+  <main>
+    <h2>Reservar Cancha</h2>
+    <form id="reservaForm">
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" required />
+
+      <label for="hora">Hora:</label>
+      <select id="hora" required>
+        <option value="">Seleccione una hora</option>
+        <option value="08:00">08:00</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+      </select>
+
+      <button type="submit">Reservar</button>
+    </form>
+    <div id="mensajeReserva"></div>
+  </main>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/reserva.js"></script>
+</body>
+</html>
